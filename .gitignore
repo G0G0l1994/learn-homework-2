@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-ghj,f.py
+
 # C extensions
 *.so
 
@@ -121,3 +121,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#homework files
+referat.txt
+referat2.txt
+ghj,f.py
