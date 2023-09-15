@@ -25,8 +25,8 @@ def str_2_datetime(date_string):
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    str_date=datetime(2020, 1, 1, 12, 10, 3, 234567)
-    return str_date
+    
+    return datetime.strptime(date_string,"%d/%m/%y %H:%M:%S.%f")
 
 if __name__ == "__main__":
     print_days()
