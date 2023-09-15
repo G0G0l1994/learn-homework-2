@@ -1,3 +1,5 @@
+import csv
+
 """
 
 Домашнее задание №2
@@ -9,13 +11,21 @@
 2. Запишите содержимое списка словарей в файл в формате csv
 
 """
+lst=[
+    {"name" : "Ivan", "age" : 20, "job":"scientist"}, 
+     {"name" : "Yuri", "age" : 24, "job":"programmer"},
+     {"name" : "Natali", "age" : 26, "job":"designer"},
+     {"name" : "Bruce", "age" : 80, "job":"superhero"},
+     {"name" : "Peter", "age" : 40, "job":"photographer"}
+     ]
+def main(lst):
+   with open ('users.csv','w',encoding='utf-8',newline='') as f:
+       for i in lst:
+           
+        writer=csv.DictWriter(f,i)
+        writer.writeheader()
+        writer.writerow(i)
 
-def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
 
 if __name__ == "__main__":
-    main()
+    main(lst)
