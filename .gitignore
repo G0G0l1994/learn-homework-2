@@ -121,3 +121,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#homework files
+referat.txt
+referat2.txt
+ghj,f.py
